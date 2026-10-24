@@ -1,0 +1,71 @@
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 505px;
+  overflow: hidden;
+  background-color: var(--color-banner-dark);
+  /* Fallback jab image na ho: halki warm glow + dark gradient */
+  background-image:
+    radial-gradient(ellipse 18% 32% at 19% 38%, rgba(255, 190, 110, 0.3), transparent 70%),
+    radial-gradient(ellipse 35% 55% at 85% 70%, rgba(190, 205, 190, 0.2), transparent 70%),
+    linear-gradient(180deg, #0e090c 0%, #1a1216 60%, #2a2227 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 80px var(--container-padding);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 22px;
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5.4vw, 66px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-white);
+}
+
+.text {
+  margin: 0 0 40px;
+  font-size: clamp(15px, 1.5vw, 20px);
+  color: var(--color-white);
+}
+
+.cta {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-topbar-bg);
+  background: var(--color-accent);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--color-white);
+}
+
+@media (max-width: 640px) {
+  .section {
+    min-height: 420px;
+  }
+
+  .content {
+    padding: 60px var(--container-padding);
+  }
+}

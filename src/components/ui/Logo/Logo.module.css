@@ -1,0 +1,32 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-white);
+}
+
+.mark {
+  flex-shrink: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.18);
+}

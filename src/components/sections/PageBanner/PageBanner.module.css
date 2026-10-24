@@ -1,0 +1,79 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  overflow: hidden;
+  background-color: var(--color-banner-dark);
+  /* Fallback jab image na ho: halki warm glow + dark gradient */
+  background-image:
+    radial-gradient(ellipse 18% 40% at 20% 45%, rgba(255, 190, 110, 0.22), transparent 70%),
+    radial-gradient(ellipse 35% 60% at 85% 70%, rgba(190, 205, 190, 0.14), transparent 70%),
+    linear-gradient(180deg, #0e090c 0%, #1a1216 60%, #2a2227 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 60px var(--container-padding);
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 18px;
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--color-white);
+}
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.crumb {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.crumbLink {
+  color: var(--color-white);
+  transition: color 0.2s ease;
+}
+
+.crumbLink:hover {
+  color: var(--color-accent);
+}
+
+.sep {
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 640px) {
+  .banner {
+    min-height: 220px;
+  }
+
+  .crumbs {
+    font-size: 15px;
+  }
+}

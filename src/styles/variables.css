@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --color-topbar-bg: #483434;
+  --color-header-bg: #5a4343;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-text-muted: #cdbcbc;
+  --color-nav: #e3d4d4;
+  --color-white: #ffffff;
+  --color-accent: #e8d44a;
+  --color-primary: #0b8a72;
+  --color-primary-dark: #08705c;
+  --color-banner-dark: #120c0f;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: 24px;
+  --topbar-height: 55px;
+  --header-height: 130px;
+
+  /* Typography */
+  --font-body: var(--font-roboto), Arial, sans-serif;
+  --font-heading: var(--font-playfair), Georgia, serif;
+}

@@ -1,0 +1,121 @@
+.footer {
+  /* Footer ke rang yahin se badalein */
+  --color-footer-bg: #3b3737;
+  --color-footer-box: #444040;
+  --color-footer-input: #5a5656;
+  --color-footer-text: #a09c9c;
+  --color-footer-link: #918d8d;
+
+  background: var(--color-footer-bg);
+  padding: 72px 0 92px;
+}
+
+.inner {
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.3fr;
+  gap: 0 24px;
+}
+
+/* Logo ke beech ka dot footer ke background jaisa dikhe */
+.logo {
+  --color-header-bg: var(--color-footer-bg);
+  margin-bottom: 36px;
+  padding-top: 4px;
+}
+
+.description {
+  margin: 0;
+  padding-right: 28px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--color-footer-text);
+}
+
+.heading {
+  margin: 0 0 42px;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--color-footer-link);
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+.address {
+  margin: 0 0 24px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--color-footer-text);
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  font-size: 17px;
+  color: var(--color-footer-text);
+  transition: color 0.2s ease;
+}
+
+.contactRow:hover {
+  color: var(--color-accent);
+}
+
+.newsletter {
+  margin: 100px -16px 0;
+}
+
+@media (max-width: 1100px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 32px;
+  }
+
+  .about {
+    grid-column: 1 / -1;
+    max-width: 560px;
+  }
+
+  .heading {
+    margin-bottom: 24px;
+  }
+
+  .newsletter {
+    margin: 64px 0 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 52px 0 56px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

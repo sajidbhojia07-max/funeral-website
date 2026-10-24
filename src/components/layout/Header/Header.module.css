@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  z-index: 10;
+  background: var(--color-header-bg);
+  height: var(--header-height);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.inner {
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .header {
+    height: 100px;
+  }
+}

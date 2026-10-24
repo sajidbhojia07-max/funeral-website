@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 1.8 / 1;
+  background: #d9d4cc;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.body {
+  flex: 1;
+  padding: 36px 42px 56px;
+}
+
+.title {
+  margin: 0 0 18px;
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-header-bg);
+}
+
+.description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #7a7a7a;
+}
+
+@media (max-width: 640px) {
+  .body {
+    padding: 28px 26px 36px;
+  }
+}
